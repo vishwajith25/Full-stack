@@ -1,0 +1,88 @@
+header {
+  position: relative; /* for absolute positioning context */
+  padding: 20px;
+  background-color: #3498db; /* blue header */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.login-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: #3498db;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Vertical menu: block-level links stacking vertically */
+.vertical a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.vertical a:last-child {
+  border-bottom: none;
+}
+
+.vertical a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Horizontal menu: inline-block links arranged horizontally */
+.horizontal a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.horizontal a:last-child {
+  margin-right: 0;
+}
+
+.horizontal a:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}

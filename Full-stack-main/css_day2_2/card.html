@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile card</title>
+        <style>
+            
+            .card {
+            border-radius: 10px;
+            background-image: url(assets_user_photo.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            width: 300px; /* optional, adjust as needed */
+            color: black; /* ensure text contrast */
+            }
+
+            .card .overlay {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            /* make overlay fill the card */
+            position: relative;
+            }
+
+            .card .name,
+            .card .role,
+            .card .bio {
+            margin: 0 0 10px 0;
+            }
+
+
+  
+        </style>
+    </head>
+    <body>
+        <h1>Exercise 2:Profile card</h1>
+        <article class="card">
+            <div class="overlay">
+                <h2 class="name">Yashvi Reddy Sunku</h2>
+                <p class="role">Engineer</p>
+                <p class="bio">
+                    I am a Computer Science Engineer with a 
+                    specialization in Artificial Intelligence and Machine Learning.
+                </p>
+            </div>
+        </article>
+    </body>
+</html>

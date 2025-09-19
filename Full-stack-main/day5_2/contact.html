@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact – Get in Touch</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <section>
+    <form action="submit_form.php" method="post">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="interest">Area of Interest:</label><br>
+      <select id="interest" name="interest">
+        <option value="design">Design</option>
+        <option value="development">Development</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>
