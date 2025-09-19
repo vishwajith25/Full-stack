@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Features</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Specifications Section */
+    dl {
+      max-width: 600px;
+      margin: 1.5rem auto;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-top: 0.8rem;
+      color: #004080;
+    }
+
+    dd {
+      margin-left: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    th[scope="row"] {
+      text-align: left;
+      background: #f0f0f0;
+    }
+
+    thead th {
+      background: #004080;
+      color: #fff;
+    }
+
+    /* Zebra striping */
+    tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    /* Highlight Recommended column */
+    td.recommended, th.recommended {
+      background: #d1f0d1;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Product Feature Page</h1>
+  </header>
+
+  <main>
+    <!-- Specifications Section -->
+    <section>
+      <h2>Specifications</h2>
+      <dl>
+        <dt>Display</dt>
+        <dd>6.5" AMOLED, 120Hz refresh rate</dd>
+        <dt>Processor</dt>
+        <dd>Octa-core 3.0GHz, AI-optimized</dd>
+        <dt>Battery</dt>
+        <dd>5000mAh with 65W fast charging</dd>
+        <dt>Camera</dt>
+        <dd>108MP main, 12MP ultra-wide, 10MP telephoto</dd>
+        <dt>Storage</dt>
+        <dd>128GB / 256GB with expandable option</dd>
+      </dl>
+    </section>
+
+    <!-- Product Comparison Table -->
+    <section>
+      <h2>Compare Our Models</h2>
+      <table>
+        <caption>Product Comparison</caption>
+        <thead>
+          <tr>
+            <th scope="col">Features</th>
+            <th scope="col">Model A</th>
+            <th scope="col" class="recommended">Model B (Recommended)</th>
+            <th scope="col">Model C</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Display</th>
+            <td>6.1" LCD</td>
+            <td class="recommended">6.5" AMOLED, 120Hz</td>
+            <td>6.7" OLED, 90Hz</td>
+          </tr>
+          <tr>
+            <th scope="row">Processor</th>
+            <td>Quad-core 2.4GHz</td>
+            <td class="recommended">Octa-core 3.0GHz</td>
+            <td>Octa-core 2.8GHz</td>
+          </tr>
+          <tr>
+            <th scope="row">Battery</th>
+            <td>3500mAh, 15W charging</td>
+            <td class="recommended">5000mAh, 65W fast charge</td>
+            <td>4500mAh, 25W charge</td>
+          </tr>
+          <tr>
+            <th scope="row">Camera</th>
+            <td>48MP dual camera</td>
+            <td class="recommended">108MP triple camera</td>
+            <td>64MP quad camera</td>
+          </tr>
+          <tr>
+            <th scope="row">Storage</th>
+            <td>64GB</td>
+            <td class="recommended">128GB / 256GB</td>
+            <td>128GB</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

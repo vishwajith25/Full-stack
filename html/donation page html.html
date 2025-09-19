@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Profit Campaign</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Hero */
+    .hero {
+      background: #2a9d8f;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Impact stats with CSS counters */
+    .impact {
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+    .impact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .impact ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+      counter-reset: stat-counter;
+    }
+    .impact li {
+      counter-increment: stat-counter;
+      background: #f0f0f0;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .impact li::before {
+      content: counter(stat-counter) ". ";
+      font-weight: bold;
+      color: #2a9d8f;
+      margin-right: 0.5rem;
+    }
+
+    /* Donation Tiers */
+    .tiers {
+      padding: 2rem 1rem;
+      background: #f9f9f9;
+    }
+    .tiers h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .tier-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      flex: 1 1 220px;
+      max-width: 250px;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2a9d8f;
+    }
+    .card .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #e76f51;
+      margin: 1rem 0;
+    }
+    .card button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      background: #2a9d8f;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card button:hover {
+      background: #21867a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Together We Can Make a Difference</h1>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="impact">
+    <h2>Our Impact</h2>
+    <ul>
+      <li>10,000 Meals Served</li>
+      <li>2,500 Families Helped</li>
+      <li>300 Volunteers Engaged</li>
+      <li>50 Communities Supported</li>
+    </ul>
+  </section>
+
+  <!-- Donation Tiers -->
+  <section class="tiers">
+    <h2>Choose Your Donation Tier</h2>
+    <div class="tier-cards">
+      <div class="card">
+        <h3>Supporter</h3>
+        <p>Help provide meals to families in need.</p>
+        <div class="price">$25</div>
+        <button>Donate Now</button>
+      </div>
+      <div class="card">
+        <h3>Advocate</h3>
+        <p>Fund essential supplies for local communities.</p>
+        <div class="price">$50</div>
+        <button>Donate Now</button>
+      </div>
+      <div class="card">
+        <h3>Champion</h3>
+        <p>Support housing and shelter projects.</p>
+        <div class="price">$100</div>
+        <button>Donate Now</button>
+      </div>
+      <div class="card">
+        <h3>Hero</h3>
+        <p>Transform lives with long-term programs.</p>
+        <div class="price">$250</div>
+        <button>Donate Now</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
